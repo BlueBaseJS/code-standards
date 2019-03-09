@@ -8,7 +8,7 @@
 
 <hr />
 
-### List of configurations
+## List of configurations
 
 - babel.config.js
 - jest.config.js
