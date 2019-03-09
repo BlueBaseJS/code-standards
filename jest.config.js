@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   preset: 'react-native',
   testEnvironment: 'node',
@@ -16,8 +14,8 @@ module.exports = {
     'node'
   ],
   moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': path.resolve(__dirname, './jest/fileMock.ts'),
-    '^.+\\.(css|less|scss)$': path.resolve(__dirname, './jest/styleMock.ts')
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '@bluebase/code-standards/jest/fileMock.js',
+    '^.+\\.(css|less|scss)$': '@bluebase/code-standards/jest/styleMock.js'
   },
   transformIgnorePatterns: [
     '/node_modules/(?!ui-components|react-native).+\\.js$',
@@ -49,5 +47,4 @@ module.exports = {
     // 'src/*/output/**',
     // 'output/'
   ],
-  setupFilesAfterEnv: [path.resolve(__dirname, './jest/setup.js')]
 };
