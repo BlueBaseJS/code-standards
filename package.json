@@ -4,7 +4,7 @@
   "description": "A collection of coding standards used for BlueBase projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "repository": "https://github.com/BlueBaseJS/code-standards",
   "author": "BlueEast Team",
