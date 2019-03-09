@@ -1,0 +1,35 @@
+{
+  "name": "@bluebase/code-standards",
+  "version": "0.0.1",
+  "description": "A collection of coding standards used for BlueBase projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueBaseJS/babel-preset-bluebase.git"
+  },
+  "author": "BlueEast Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueBaseJS/babel-preset-bluebase/issues"
+  },
+  "homepage": "https://github.com/BlueBaseJS/babel-preset-bluebase#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+		"@babel/preset-typescript": "^7.1.0",
+		"tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.4"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.53.0"
+  }
+}
