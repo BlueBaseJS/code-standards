@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 		"target": "es2017",
-		"outDir": "dist",
 		"moduleResolution": "node",
 		"module": "commonjs",
 		"declaration": true,
@@ -43,13 +42,5 @@
 
 		"lib": ["es2017"],
 		"types": ["jest"],
-		"typeRoots": ["node_modules/@types"],
-		"baseUrl": ".",
-		"paths": {
-			"*": ["typings/*"]
-		}
-	},
-	"include": ["src/**/*.ts"],
-	"exclude": ["node_modules/**", "**/*.spec.ts", "**/*.test.ts", "**/*.stories.ts"],
-	"compileOnSave": false
+	}
 }

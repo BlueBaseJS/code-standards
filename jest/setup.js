@@ -1,7 +1,7 @@
-import 'react-native';
-import 'jest-enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import Enzyme from 'enzyme';
+require('react-native');
+require('jest-enzyme');
+const Adapter = require('enzyme-adapter-react-16').default;
+const Enzyme = require('enzyme'). default;
 
 /**
  * Set up DOM in node.js environment for Enzyme to mount to
