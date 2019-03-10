@@ -10,6 +10,8 @@
 
 ## List of configurations
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BlueBaseJS/code-standards.svg)](https://greenkeeper.io/)
+
 - babel.config.js
 - jest.config.js
 - tsconfig.json
