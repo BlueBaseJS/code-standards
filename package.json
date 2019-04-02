@@ -1,6 +1,6 @@
 {
   "name": "@bluebase/code-standards",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "A collection of coding standards used for BlueBase projects",
   "main": "index.js",
   "scripts": {
