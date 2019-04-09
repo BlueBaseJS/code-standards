@@ -1,10 +1,16 @@
+const { defaults: tsjPreset } = require('ts-jest/presets');
+
 module.exports = {
+  ...tsjPreset,
+
   preset: 'react-native',
   testEnvironment: 'node',
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    // '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.(js)$': '<rootDir>/node_modules/babel-jest',
+    '\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest/preprocessor.js'
   },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
+  testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$',
   moduleFileExtensions: [
     'ts',
     'tsx',
@@ -21,6 +27,7 @@ module.exports = {
     '/node_modules/(?!ui-components|react-native).+\\.js$',
   ],
   testPathIgnorePatterns: [
+    '\\.snap$',
     '<rootDir>/node_modules/',
     '<rootDir>/dist/',
   ],
@@ -47,4 +54,10 @@ module.exports = {
     // 'src/*/output/**',
     // 'output/'
   ],
+  cacheDirectory: '.jest/cache',
+  globals: {
+    'ts-jest': {
+      babelConfig: true,
+    }
+  },
 };
