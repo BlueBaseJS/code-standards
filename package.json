@@ -18,7 +18,7 @@
     "@babel/plugin-transform-flow-strip-types": "^7.4.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
-    "metro-react-native-babel-preset": "^0.53.0",
+    "metro-react-native-babel-preset": "^0.54.1",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
