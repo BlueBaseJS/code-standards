@@ -4,7 +4,9 @@
   "description": "A collection of coding standards used for BlueBase projects",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "https://github.com/BlueBaseJS/code-standards",
   "author": "BlueEast Team",
@@ -24,9 +26,11 @@
     "tslint-config-prettier": "^1.15.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.1.4"
+    "typescript": "^3.1.4",
+    "snyk": "^1.189.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
