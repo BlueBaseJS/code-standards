@@ -29,6 +29,7 @@ module.exports = {
 
   publish: [
     "@semantic-release/github",
+    "@semantic-release/npm",
     "@qiwi/semantic-release-gh-pages-plugin"
   ],
   success: "@semantic-release/github",
