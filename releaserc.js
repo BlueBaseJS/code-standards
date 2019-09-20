@@ -3,8 +3,8 @@ module.exports = {
 	branches: [
 		'master',
 		'next',
-		{ branch: 'beta', prerelease: true },
-		{ branch: 'alpha', prerelease: true },
+		{ name: 'beta', prerelease: true },
+		{ name: 'alpha', prerelease: true },
 	],
 	plugins: [
 		'@semantic-release/commit-analyzer',
