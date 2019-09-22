@@ -16,6 +16,12 @@ module.exports = {
 				prepareCmd: 'yarn fix:md',
 			},
 		],
+		[
+			'@semantic-release/exec',
+			{
+				prepareCmd: 'yarn fix:prettier',
+			},
+		],
 		'@semantic-release/npm',
 		'./scripts/version.js',
 		[
