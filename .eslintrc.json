@@ -32,7 +32,7 @@
         "prettier"
     ],
     "rules": {
-        "arrow-parens": false,
+        "arrow-parens": 0,
         "arrow-return-shorthand": [false],
         "comment-format": [true, "check-space"],
         "import-blacklist": [true, "rxjs"],
@@ -42,7 +42,7 @@
         "member-ordering": [true, {
         "order": "fields-first"
         }],
-        "newline-before-return": false,
+        "newline-before-return": 0,
         "no-any": false,
         "no-empty-interface": false,
         "no-inferrable-types": [true, "ignore-params", "ignore-properties"],
@@ -54,6 +54,10 @@
         "no-this-assignment": [true, {
         "allow-destructuring": true
         }],
+        "jsdoc-format": [
+            true,
+            "check-multiline-start"
+        ],
         "object-literal-shorthand": false,
         "one-variable-per-declaration": [false],
         "only-arrow-functions": [true, "allow-declarations"],
@@ -85,6 +89,30 @@
 		"object-literal-sort-keys": true,
         "no-implicit-dependencies": false,
         "jsx-boolean-value": false,
+        "jsx-alignment": true,
+        "jsx-curly-spacing": [
+            true,
+            "never"
+        ],
+        "jsx-equals-spacing": [
+            true,
+            "never"
+        ],
+        "jsx-key": true,
+        "jsx-no-bind": true,
+        "jsx-no-lambda": true,
+        "jsx-no-string-ref": true,
+        "jsx-self-close": true,
+        "jsx-wrap-multiline": true,
+        "no-duplicate-imports": 1,
+        "no-duplicate-variable": [
+            true,
+            "check-parameters"
+        ],
+        "no-reference-import": true,
+        "no-shadowed-variable": true,
+        "no-unused-expression": true,
+        "prefer-conditional-expression": true,
         "no-submodule-imports": false
     }
 }
