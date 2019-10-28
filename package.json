@@ -1,49 +1,59 @@
 {
-	"name": "@bluebase/code-standards",
-	"version": "1.0.3",
-	"description": "A collection of coding standards used for BlueBase projects",
-	"main": "index.js",
-	"scripts": {
-		"test": "exit 0"
-	},
-	"repository": "https://github.com/BlueBaseJS/code-standards",
-	"author": "BlueEast Team",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/BlueBaseJS/code-standards/issues"
-	},
-	"homepage": "https://github.com/BlueBaseJS/code-standards#readme",
-	"dependencies": {
-		"@babel/plugin-proposal-object-rest-spread": "^7.2.0",
-		"@babel/plugin-transform-flow-strip-types": "^7.4.0",
-		"@babel/preset-react": "^7.0.0",
-		"@babel/preset-typescript": "^7.1.0",
-		"@semantic-release/changelog": "^3.0.4",
-		"@semantic-release/commit-analyzer": "^6.3.0",
-		"@semantic-release/exec": "^3.3.3",
-		"@semantic-release/git": "^7.1.0-beta.3",
-		"@semantic-release/github": "^5.4.3",
-		"@semantic-release/npm": "^5.1.15",
-		"@semantic-release/release-notes-generator": "^7.3.0",
-		"metro-react-native-babel-preset": "^0.53.0",
-		"semver": "^6.3.0",
-		"tslint": "5.11.0",
-		"tslint-config-airbnb": "^5.11.0",
-		"tslint-config-prettier": "^1.15.0",
-		"tslint-eslint-rules": "^5.4.0",
-		"tslint-react": "^3.6.0",
-		"typescript": "^3.1.4"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"prettier": {
-		"singleQuote": true,
-		"useTabs": true,
-		"trailingComma": "es5"
-	},
-	"devDependencies": {
-		"@types/semver": "^6.0.2",
-		"install": "^0.13.0"
-	}
+  "name": "@bluebase/code-standards",
+  "version": "1.0.3",
+  "description": "A collection of coding standards used for BlueBase projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0",
+    "lint:ts": "eslint --ext=jsx,ts,tsx src"
+  },
+  "repository": "https://github.com/BlueBaseJS/code-standards",
+  "author": "BlueEast Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueBaseJS/code-standards/issues"
+  },
+  "homepage": "https://github.com/BlueBaseJS/code-standards#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@qiwi/semantic-release-gh-pages-plugin": "^1.10.5",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/commit-analyzer": "^6.2.0",
+    "@semantic-release/exec": "^3.3.3",
+    "@semantic-release/git": "^7.0.12",
+    "@semantic-release/github": "^5.4.3",
+    "@semantic-release/npm": "^5.1.9",
+    "@semantic-release/release-notes-generator": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-order-alphabetical": "^1.0.0",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prefer-arrow": "^1.1.6",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "metro-react-native-babel-preset": "^0.53.0",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-scripts": "^3.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {}
 }
