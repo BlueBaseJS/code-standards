@@ -41,7 +41,7 @@
     "eslint-plugin-prefer-arrow": "^1.1.6",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "metro-react-native-babel-preset": "^0.53.0",
+    "metro-react-native-babel-preset": "^0.56.4",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-scripts": "^3.0.1",
