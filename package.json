@@ -20,7 +20,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
     "@qiwi/semantic-release-gh-pages-plugin": "^1.10.5",
-    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/changelog": "^5.0.0",
     "@semantic-release/commit-analyzer": "^6.3.0",
     "@semantic-release/exec": "^3.3.3",
     "@semantic-release/git": "^7.1.0-beta.3",
