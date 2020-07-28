@@ -2,7 +2,12 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
   extends: [
     "eslint:recommended",
@@ -10,19 +15,19 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
   ],
   globals: {
     Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
+    SharedArrayBuffer: "readonly",
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: [
     "react",
@@ -31,7 +36,7 @@ module.exports = {
     "prettier",
     "prefer-arrow",
     "eslint-plugin-import-order-alphabetical",
-    "import"
+    "import",
   ],
   rules: {
     "@typescript-eslint/consistent-type-definitions": 0,
@@ -58,8 +63,8 @@ module.exports = {
       {
         devDependencies: false,
         optionalDependencies: false,
-        peerDependencies: false
-      }
+        peerDependencies: false,
+      },
     ],
     "import/no-internal-modules": 0,
     "import/no-unresolved": [0],
@@ -67,8 +72,8 @@ module.exports = {
       2,
       "tab",
       {
-        SwitchCase: 1
-      }
+        SwitchCase: 1,
+      },
     ],
     "max-len": [1, 120],
     "newline-before-return": 0,
@@ -92,8 +97,8 @@ module.exports = {
       {
         classPropertiesAllowed: false,
         disallowPrototype: true,
-        singleReturnOnly: false
-      }
+        singleReturnOnly: false,
+      },
     ],
     "prefer-template": 2,
     "prettier/prettier": 0,
@@ -111,6 +116,10 @@ module.exports = {
     "sort-keys": [0],
     "spaced-comment": 2,
     "valid-jsdoc": [0],
-    "react/display-name": [1]
-  }
+    "react/display-name": [1],
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#eslint-plugin-import
+    "import/named": 0,
+    "import/namespace": 0,
+  },
 };
