@@ -126,6 +126,8 @@ module.exports = {
 		"valid-jsdoc": [0],
 		"react/display-name": [1],
 
+		'no-multiple-empty-lines': ['warn', { 'max': 1 }],
+
 		// https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#eslint-plugin-import
 		"import/named": 0,
 		"import/namespace": 0
