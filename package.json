@@ -27,7 +27,7 @@
     "@semantic-release/github": "^5.4.3",
     "@semantic-release/npm": "^5.1.15",
     "@semantic-release/release-notes-generator": "^7.3.0",
-    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.7.1",
     "axios": "^0.19.2",
     "eslint": "^7.5.0",
