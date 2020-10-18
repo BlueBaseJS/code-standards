@@ -126,7 +126,11 @@ module.exports = {
 		'no-multi-spaces': 1,
 		'keyword-spacing': [1, { "before": true }],
 		"func-call-spacing": [1, "never"],
-		"space-before-function-paren": [1, "always"],
+		"space-before-function-paren": [1, {
+			"anonymous": "never",
+			"named": "never",
+			"asyncArrow": "always"
+		}],
 		"arrow-spacing": [1, { "before": true, "after": true }],
 		"space-in-parens": [1, "never"],
 		"object-curly-spacing": ["error", "always"],
