@@ -3,14 +3,14 @@ const { defaults: tsjPreset } = require("ts-jest/presets");
 module.exports = {
 	...tsjPreset,
 
-	preset: "react-native",
+	preset: 'jest-expo',
+
 	testEnvironment: "node",
 	transform: {
 		// '^.+\\.tsx?$': 'ts-jest',
 		"^.+\\.(js)$": "babel-jest",
 		"\\.(ts|tsx)$": "ts-jest"
 	},
-	testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
 	moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
 	moduleNameMapper: {
 		"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
