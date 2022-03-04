@@ -24,6 +24,15 @@ module.exports = {
 		],
 		'@semantic-release/npm',
 		'./scripts/version.js',
+
+		// Rebuild to have correct versions in the dist folder
+		[
+			'@semantic-release/exec',
+			{
+				prepareCmd: 'yarn build'
+			}
+		],
+
 		'./scripts/postMessage.js',
 		[
 			'@semantic-release/git',

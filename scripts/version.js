@@ -8,7 +8,7 @@ const { parse } = require('semver');
  */
 async function prepare(_pluginConfig, ctx) {
 	await updateVersionFile(_pluginConfig, ctx);
-	await updatePackageJsonFile(_pluginConfig, ctx);
+	// await updatePackageJsonFile(_pluginConfig, ctx);
 }
 
 async function updateVersionFile(_pluginConfig, { nextRelease: { version }, logger }) {
