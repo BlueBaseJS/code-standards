@@ -33,7 +33,7 @@ async function updateVersionFile(_pluginConfig, { nextRelease: { version }, logg
 }
 
 async function updatePackageJsonFile(_pluginConfig, { nextRelease: { version }, logger }) {
-	const packageJson = require('./package.json');
+	const packageJson = require('root-require')('package.json');
 	const number = getVersionNumber(version);
 
 	packageJson.versionCode = number;
