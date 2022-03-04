@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { parse } = require('semver');
+const packageJson = require('./package.json');
 
 /**
  * Create version.ts and sync the repos i.e. master and develop branches
@@ -35,7 +36,6 @@ export const VERSION_NUMBER = ${number};
 async function updatePackageJsonFile(_pluginConfig, { nextRelease: { version }, logger }) {
 	const number = getVersionNumber(version);
 
-	const packageJson = require('package.json');
 	packageJson.versionCode = number;
 
 	fs.writeFile('package.json', JSON.stringify(packageJson), function writeJSON(err) {
