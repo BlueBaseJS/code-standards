@@ -24,20 +24,11 @@ module.exports = {
 		],
 		'@semantic-release/npm',
 		'./scripts/version.js',
-
-		// Rebuild to have correct versions in the dist folder
-		[
-			'@semantic-release/exec',
-			{
-				prepareCmd: 'yarn build'
-			}
-		],
-
 		'./scripts/postMessage.js',
 		[
 			'@semantic-release/git',
 			{
-				assets: ['src/version.ts', 'CHANGELOG.md', 'package.json'],
+				assets: ['src/version.ts', 'CHANGELOG.md', 'package.json', 'app.config.ts'],
 				message:
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
 			}
