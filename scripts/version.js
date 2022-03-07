@@ -97,6 +97,13 @@ async function updateReactNative(version, versionCode) {
 		from: /CURRENT_PROJECT_VERSION = (\d+);/g,
 		to: `CURRENT_PROJECT_VERSION = ${versionCode};`,
 	});
+
+	// Electron
+	replace.sync({
+		files: ['electron.js'],
+		from: /buildVersion: .*,/g,
+		to: `buildVersion: ${versionCode},`,
+	});
 }
 
 /**
