@@ -10,7 +10,7 @@ module.exports = {
 		'@semantic-release/release-notes-generator',
 		'@semantic-release/changelog',
 		'@semantic-release/npm',
-		'../scripts/postMessage.js',
+		// '../scripts/postMessage.js',
 		[
 			'@semantic-release/git',
 			{
