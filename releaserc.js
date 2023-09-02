@@ -24,7 +24,6 @@ module.exports = {
 		],
 		'@semantic-release/npm',
 		'./scripts/version.js',
-		'./scripts/entryPoint.js',
 		[
 			'@semantic-release/git',
 			{
@@ -33,6 +32,7 @@ module.exports = {
           'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
 			}
 		],
+		'./scripts/entryPoint.js',
 		'@semantic-release/github'
 		// "@qiwi/semantic-release-gh-pages-plugin"
 	]
