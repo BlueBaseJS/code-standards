@@ -11,9 +11,9 @@ async function prepare() {
 
 // A function to update the value of "main" in package.json
 function updatePackageJson() {
-	const packageJson = require('./package.json');
+	const packageJson = require('package.json');
 	packageJson.main = 'dist/index.js';
-	fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
+	fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2));
 }
 
 module.exports = { prepare };
