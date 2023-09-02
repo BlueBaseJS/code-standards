@@ -14,3 +14,5 @@
 - jest.config.js
 - tsconfig.json
 - tslint.js
+
+Test for CI release
