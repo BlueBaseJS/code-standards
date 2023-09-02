@@ -24,7 +24,7 @@ module.exports = {
 		],
 		'@semantic-release/npm',
 		'./scripts/version.js',
-		// './scripts/postMessage.js',
+		'./scripts/entryPoint.js',
 		[
 			'@semantic-release/git',
 			{
