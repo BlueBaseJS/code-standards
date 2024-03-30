@@ -2,6 +2,7 @@ module.exports = {
 	// https://github.com/semantic-release/evolution/blob/release-workflows/_drafts/release-workflows.md#pre-releases
 	branches: [
 		'master',
+		'main',
 		'next',
 		{ name: 'beta', prerelease: true },
 		{ name: 'alpha', prerelease: true }
