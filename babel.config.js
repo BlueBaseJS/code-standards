@@ -5,9 +5,7 @@ module.exports = function() {
 			'@babel/plugin-transform-flow-strip-types'
 		],
 		presets: [
-			'@babel/react',
-			'@babel/typescript',
-			'module:metro-react-native-babel-preset'
+			'babel-preset-expo',
 		]
 	};
 };

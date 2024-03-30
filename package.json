@@ -30,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "axios": "^0.19.2",
+    "babel-preset-expo": "^10.0.1",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
