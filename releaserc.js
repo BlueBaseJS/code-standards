@@ -14,13 +14,13 @@ module.exports = {
 		[
 			'@semantic-release/exec',
 			{
-				prepareCmd: 'yarn fix:md'
+				prepareCmd: 'npm run fix:md'
 			}
 		],
 		[
 			'@semantic-release/exec',
 			{
-				prepareCmd: 'yarn fix:prettier'
+				prepareCmd: 'npm run fix:prettier'
 			}
 		],
 		'@semantic-release/npm',
