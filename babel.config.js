@@ -6,8 +6,6 @@ module.exports = function() {
 		],
 		presets: [
 			'babel-preset-expo',
-			'@babel/react',
-			'@babel/typescript',
 		]
 	};
 };
